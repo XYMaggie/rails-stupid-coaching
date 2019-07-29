@@ -1,0 +1,21 @@
+<h1>Questions#answer</h1>
+<%= link_to "ask another question", ask_path %>
+
+
+<% if @ask == 'I am going to work'%>
+   Great
+<% elsif @ask.include?("?") %>
+  Silly question, get dressed and go to work!
+<% else %>
+  I don't care, get dressed and go to work!
+<% end %>
+
+
+
+
+
+
+
+<!-- If the message is I am going to work, the coach will answer Great!
+If the message has a question mark ? at the end, the coach will answer Silly question, get dressed and go to work!.
+Otherwise she/he will answer I don't care, get dressed and go to work! -->
